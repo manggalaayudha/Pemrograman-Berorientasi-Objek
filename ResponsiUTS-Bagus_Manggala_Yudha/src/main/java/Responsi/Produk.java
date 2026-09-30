@@ -10,7 +10,7 @@ package Responsi;
  */
 class Produk {
     private String namaProduk;
-    private int harga; // Diubah dari double menjadi int
+    private int harga; 
 
     public Produk(String namaProduk, int harga) {
         this.namaProduk = namaProduk;
@@ -35,12 +35,12 @@ class Produk {
 
     public void tampilkanInfo() {
         System.out.println("Nama Produk: " + namaProduk);
-        System.out.println("Harga: " + harga); // Casting (long) dihapus
+        System.out.println("Harga: " + harga); 
     }
 }
 
 class Elektronik extends Produk {
-    private int garansi; // dalam tahun
+    private int garansi; 
 
     public Elektronik(String namaProduk, int harga, int garansi) {
         super(namaProduk, harga);

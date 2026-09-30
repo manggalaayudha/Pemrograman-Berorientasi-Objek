@@ -10,7 +10,7 @@ package Responsi;
  */
 class Pegawai {
     private String namaPegawai;
-    private int gaji; // Diubah dari double menjadi int
+    private int gaji; 
 
     public Pegawai(String namaPegawai, int gaji) {
         this.namaPegawai = namaPegawai;
@@ -35,12 +35,12 @@ class Pegawai {
 
     public void tampilkanInfo() {
         System.out.println("Nama Pegawai: " + namaPegawai);
-        System.out.println("Gaji: " + gaji); // Casting (long) dihapus
+        System.out.println("Gaji: " + gaji); 
     }
 }
 
 class PegawaiTetap extends Pegawai {
-    private int tunjangan; // Diubah dari double menjadi int
+    private int tunjangan; 
 
     public PegawaiTetap(String namaPegawai, int gaji, int tunjangan) {
         super(namaPegawai, gaji);
@@ -58,12 +58,12 @@ class PegawaiTetap extends Pegawai {
     @Override
     public void tampilkanInfo() {
         super.tampilkanInfo();
-        System.out.println("Tunjangan: " + tunjangan); // Casting (long) dihapus
+        System.out.println("Tunjangan: " + tunjangan); 
     }
 }
 
 class PegawaiKontrak extends Pegawai {
-    private int lamaKontrak; // dalam bulan
+    private int lamaKontrak; 
 
     public PegawaiKontrak(String namaPegawai, int gaji, int lamaKontrak) {
         super(namaPegawai, gaji);
